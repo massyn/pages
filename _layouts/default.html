@@ -130,9 +130,17 @@
                 <div class="logo">{{ site.title }}</div>
                 <nav>
                     <ul>
+                        {% unless site.blog_as_home %}
+                            <li>
+                                <a href="{{ '/' | relative_url }}" 
+                                   {% if page.url == '/' or page.url == '/index.html' %}class="active"{% endif %}>
+                                    Home
+                                </a>
+                            </li>
+                        {% endunless %}
                         {% assign pages = site.pages | where_exp: "page", "page.nav != false" | sort: "nav_order" %}
                         {% for page in pages %}
-                            {% if page.title and page.url != '/README.html' %}
+                            {% if page.title and page.url != '/README.html' and page.url != '/' and page.url != '/index.html' %}
                                 <li>
                                     {% if page.title == "Blog" and site.blog_as_home %}
                                         <a href="{{ '/' | relative_url }}" 
