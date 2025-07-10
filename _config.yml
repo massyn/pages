@@ -5,7 +5,7 @@ url: "https://massyn.github.io"
 baseurl: "/pages"
 
 # Set to true to make blog the home page, false for regular home page
-blog_as_home: false
+blog_as_home: true
 
 markdown: kramdown
 highlighter: rouge
