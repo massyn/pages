@@ -82,6 +82,10 @@ The page will automatically appear in the navigation menu!
 {% endif %}
 {% endif %}
 
+---
+
+*Last updated: July 10, 2024 at 3:30 PM*
+
 <style>
 .recent-posts {
   margin-top: 2rem;
