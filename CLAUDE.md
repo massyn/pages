@@ -67,8 +67,3 @@ When adding blog posts:
 1. Create file in `_posts/` with format: `YYYY-MM-DD-title.md`
 2. Include front matter with layout, title, date, author, categories
 3. Posts automatically appear in blog listings and navigation
-
-## Content Creation
-
-- On every build, add a blog post to the site.  Describe what changes you have made, and what benefits that will have to the user.
-- Update the index page on every build with the date and time when you made the last update.

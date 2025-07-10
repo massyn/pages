@@ -32,32 +32,43 @@ Welcome to our blog! Here you'll find the latest posts and updates.
 {% endif %}
 
 {% else %}
-# Welcome to GitHub Pages Demo
+# Jekyll Template for GitHub Pages
 
-This is a demonstration of GitHub Pages with Jekyll, featuring:
+A professional, flexible template for creating beautiful GitHub Pages sites with automatic navigation and configurable layouts.
 
-- **Automatic Navigation**: The navigation menu is automatically generated from all pages in the site
-- **Responsive Design**: The theme adapts to different screen sizes
-- **Clean Layout**: Professional-looking design with gradient headers and card-style content
-- **Easy to Extend**: Simply add new `.md` files with front matter to add new pages
+## Key Features
 
-## How It Works
+🚀 **Automatic Navigation** - Menus build themselves from your page titles  
+📱 **Responsive Design** - Looks great on desktop, tablet, and mobile  
+📝 **Dual Homepage Modes** - Choose between traditional or blog-first layouts  
+⚙️ **Zero Configuration** - Works out of the box with minimal setup  
+🎨 **Professional Styling** - Clean, modern design with gradient headers  
+📊 **Built-in Blog System** - Full Jekyll blog functionality included  
 
-The navigation system works by:
-1. Scanning all pages in the site
-2. Including pages that have a `title` in their front matter
-3. Sorting them by `nav_order` (if specified)
-4. Automatically generating the navigation menu
+## Quick Start
 
-## Getting Started
+1. **Get the Template**: Fork this repository or use as template
+2. **Configure**: Edit `_config.yml` with your site details  
+3. **Deploy**: Enable GitHub Pages in repository settings
+4. **Customize**: Add your content and modify styling as needed
 
-To add a new page:
-1. Create a new `.md` file
-2. Add front matter with `layout: default` and `title: Your Page Title`
-3. Optionally add `nav_order: number` to control menu order
-4. Write your content in Markdown
+## Two Homepage Modes
 
-The page will automatically appear in the navigation menu!
+### Traditional Mode (`blog_as_home: false`)
+Perfect for business sites and portfolios:
+- Welcome page with your main content
+- Recent blog posts section
+- Separate dedicated blog page
+- Professional landing page feel
+
+### Blog Mode (`blog_as_home: true`)  
+Ideal for personal blogs and news sites:
+- Full blog listing as homepage
+- Blog-first content strategy
+- Streamlined navigation
+- Content-focused experience
+
+Switch between modes by changing one line in `_config.yml`!
 
 ## Recent Blog Posts
 
