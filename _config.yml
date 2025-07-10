@@ -1,0 +1,15 @@
+title: GitHub Pages Demo
+description: A demonstration of GitHub Pages with automatic navigation
+theme: minima
+url: ""
+baseurl: ""
+
+markdown: kramdown
+highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+exclude:
+  - README.md
