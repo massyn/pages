@@ -1,7 +1,7 @@
 title: GitHub Pages Demo
 description: A demonstration of GitHub Pages with automatic navigation
 theme: minima
-url: "https://massyn.github.io/pages/"
+url: "/pages/"
 baseurl: "https://massyn.github.io/pages/"
 
 markdown: kramdown
