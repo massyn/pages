@@ -1,8 +1,8 @@
 title: GitHub Pages Demo
 description: A demonstration of GitHub Pages with automatic navigation
 theme: minima
-url: "/pages/"
-baseurl: "https://massyn.github.io/pages/"
+url: "https://massyn.github.io"
+baseurl: "/pages"
 
 markdown: kramdown
 highlighter: rouge
@@ -13,3 +13,4 @@ plugins:
 
 exclude:
   - README.md
+  - CLAUDE.md
