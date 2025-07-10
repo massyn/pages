@@ -57,12 +57,13 @@ Your site will be available at `https://yourusername.github.io/your-repo-name`
 
 **When `blog_as_home: false`** (Default):
 - Homepage shows welcome content + recent blog posts
-- Blog link in navigation goes to `/blog/`
-- Traditional website structure
+- Navigation includes "Home" link + Blog link to `/blog/`
+- Traditional website structure with clear homepage
 
 **When `blog_as_home: true`**:
 - Homepage shows full blog listing
 - Blog link in navigation goes to root (`/`)
+- No separate "Home" link (Blog becomes home)
 - Blog-first structure
 
 ### Jekyll Settings
@@ -74,8 +75,8 @@ markdown: kramdown
 highlighter: rouge
 
 plugins:
-  - jekyll-feed      # RSS feed generation
-  - jekyll-sitemap   # XML sitemap generation
+  - jekyll-feed      # RSS feed generation (/feed.xml)
+  - jekyll-sitemap   # XML sitemap generation (/sitemap.xml)
 
 exclude:
   - README.md
@@ -111,8 +112,14 @@ To run the site locally:
 - Verify pages have `title` in front matter
 - Check `nav_order` values are unique numbers
 - Use `nav: false` to exclude pages from navigation
+- "Home" link appears automatically when `blog_as_home: false`
 
 ### URL Problems
 - Ensure `url` and `baseurl` are correctly configured
 - For repository sites: `baseurl: "/repo-name"`
 - For custom domains: `baseurl: ""`
+
+### RSS Feed
+- RSS feed automatically available at `/feed.xml`
+- Feed link appears in site footer
+- Includes all blog posts with metadata

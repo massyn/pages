@@ -25,6 +25,8 @@ Automatic navigation generation using Liquid templating in `_layouts/default.htm
 - Excludes pages with `nav: false`
 - Sorts by `nav_order` parameter
 - Conditionally shows/hides blog based on `blog_as_home` setting
+- Automatically includes "Home" link when `blog_as_home: false`
+- Smart routing: Blog link points to root when `blog_as_home: true`
 
 ### Layout Structure
 - Single layout file: `_layouts/default.html` with embedded CSS
@@ -36,6 +38,8 @@ Automatic navigation generation using Liquid templating in `_layouts/default.htm
 - Blog index at `/blog/index.md` with full post listings
 - Homepage integration shows recent 3 posts when `blog_as_home: false`
 - Automatic excerpt generation and metadata display
+- RSS feed generation via `jekyll-feed` plugin (`/feed.xml`)
+- RSS link in footer with custom styling
 
 ### Content Pages
 All content pages use consistent front matter:

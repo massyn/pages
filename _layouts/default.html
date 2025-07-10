@@ -106,6 +106,17 @@
             margin-top: auto;
         }
 
+        .rss-link {
+            color: #f39c12;
+            text-decoration: none;
+            margin-left: 0.5rem;
+        }
+
+        .rss-link:hover {
+            color: #e67e22;
+            text-decoration: underline;
+        }
+
         @media (max-width: 768px) {
             .header-content {
                 flex-direction: column;
@@ -172,7 +183,9 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 {{ site.title }}. Built with GitHub Pages.</p>
+            <p>&copy; 2024 {{ site.title }}. Built with GitHub Pages. 
+               <a href="{{ '/feed.xml' | relative_url }}" class="rss-link">RSS Feed</a>
+            </p>
         </div>
     </footer>
 </body>

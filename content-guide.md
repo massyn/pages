@@ -161,13 +161,20 @@ First, install Jekyll...
 
 ### Navigation Order
 
-Plan your navigation structure:
+Plan your navigation structure based on your homepage mode:
 
-1. **Home** (`nav_order: 1`) - Always first
-2. **Blog** (`nav_order: 2`) - If using separate blog page
-3. **Installation** (`nav_order: 2-3`) - Setup guide
-4. **Content Guide** (`nav_order: 3-4`) - This page
+**Traditional Mode** (`blog_as_home: false`):
+1. **Home** - Automatically generated link
+2. **Blog** (`nav_order: 2`) - Separate blog page
+3. **Installation** (`nav_order: 3`) - Setup guide
+4. **Content Guide** (`nav_order: 4`) - This page
 5. **Other pages** (`nav_order: 5+`) - Additional content
+
+**Blog Mode** (`blog_as_home: true`):
+1. **Blog** - Becomes homepage (no separate link)
+2. **Installation** (`nav_order: 2`) - Setup guide
+3. **Content Guide** (`nav_order: 3`) - This page
+4. **Other pages** (`nav_order: 4+`) - Additional content
 
 ### Categories and Organization
 
@@ -231,13 +238,23 @@ Store images in an `assets` or `images` folder in your repository.
 ### Traditional Mode (`blog_as_home: false`)
 
 - Homepage shows welcome content + recent 3 posts
+- "Home" link automatically appears in navigation
 - Blog page at `/blog/` shows all posts
 - Good for business sites with mixed content
 
 ### Blog Mode (`blog_as_home: true`)
 
 - Homepage shows full blog listing
-- No separate blog page needed
+- Blog navigation link points to homepage
+- No separate "Home" link (Blog becomes home)
 - Good for personal blogs or news sites
+
+### RSS Feed Integration
+
+Both modes include automatic RSS feed generation:
+- Feed available at `/feed.xml`
+- RSS link appears in site footer
+- Includes all blog posts with full metadata
+- Compatible with feed readers and aggregators
 
 Choose the mode that best fits your content strategy.

@@ -15,6 +15,8 @@ This Jekyll template provides a comprehensive set of features for creating profe
 - **Smart Ordering**: Use `nav_order` to control menu position
 - **Flexible Display**: Hide pages with `nav: false`
 - **Active States**: Current page highlighted in navigation
+- **Context-Aware**: "Home" link appears automatically in traditional mode
+- **Blog Integration**: Blog link intelligently routes based on homepage mode
 
 ### 📱 Responsive Design
 - **Mobile-First**: Optimized for all screen sizes
@@ -31,7 +33,9 @@ This Jekyll template provides a comprehensive set of features for creating profe
 - **Jekyll Standards**: Follows Jekyll conventions for posts
 - **Automatic Excerpts**: Smart excerpt generation for listings
 - **Metadata Display**: Author, date, and category support
-- **RSS Feed**: Built-in feed generation with `jekyll-feed`
+- **RSS Feed**: Built-in feed generation with footer link
+- **Feed Integration**: Automatic `/feed.xml` with full metadata
+- **Reader Compatible**: Works with all RSS feed readers
 
 ## Technical Features
 
@@ -45,8 +49,8 @@ baseurl: /your-repo
 ```
 
 ### 🔧 Jekyll Plugins
-- **jekyll-feed**: Automatic RSS feed generation
-- **jekyll-sitemap**: XML sitemap for SEO
+- **jekyll-feed**: Automatic RSS feed generation (`/feed.xml`)
+- **jekyll-sitemap**: XML sitemap for SEO (`/sitemap.xml`)
 - **Kramdown**: Enhanced Markdown processing
 - **Rouge**: Syntax highlighting for code
 
