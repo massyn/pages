@@ -1,9 +1,37 @@
 ---
 layout: default
-title: Home
+title: {% if site.blog_as_home %}Blog{% else %}Home{% endif %}
 nav_order: 1
 ---
 
+{% if site.blog_as_home %}
+# Blog
+
+Welcome to our blog! Here you'll find the latest posts and updates.
+
+<div class="blog-posts">
+  {% for post in site.posts %}
+    <article class="blog-post">
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      <div class="post-meta">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+        {% if post.author %} • by {{ post.author }}{% endif %}
+      </div>
+      <div class="post-excerpt">
+        {{ post.excerpt | strip_html | truncatewords: 50 }}
+      </div>
+      <a href="{{ post.url | relative_url }}" class="read-more">Read more →</a>
+    </article>
+  {% endfor %}
+</div>
+
+{% if site.posts.size == 0 %}
+<div class="no-posts">
+  <p>No blog posts yet. Check back soon!</p>
+</div>
+{% endif %}
+
+{% else %}
 # Welcome to GitHub Pages Demo
 
 This is a demonstration of GitHub Pages with Jekyll, featuring:
@@ -51,6 +79,7 @@ The page will automatically appear in the navigation menu!
 <div class="view-all-posts">
   <a href="{{ '/blog/' | relative_url }}" class="view-all">View All Posts →</a>
 </div>
+{% endif %}
 {% endif %}
 
 <style>

@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Blog
-nav_order: 2
+nav_order: {% if site.blog_as_home %}10{% else %}2{% endif %}
+nav: {% if site.blog_as_home %}false{% else %}true{% endif %}
 ---
 
 # Blog

@@ -1,8 +1,11 @@
-title: GitHub Pages Demo
+title: Phil's demo site for Pages
 description: A demonstration of GitHub Pages with automatic navigation
 theme: minima
 url: "https://massyn.github.io"
 baseurl: "/pages"
+
+# Set to true to make blog the home page, false for regular home page
+blog_as_home: false
 
 markdown: kramdown
 highlighter: rouge
